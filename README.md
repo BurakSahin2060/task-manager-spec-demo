@@ -1,3 +1,7 @@
+## Application Preview
+
+![Task Manager](docs/app-preview.png)
+
 # Task Manager Web App – Spec Driven Development Demo
 
 This project demonstrates the Spec-Driven Development workflow using GitHub Spec Kit.
