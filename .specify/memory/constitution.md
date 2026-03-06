@@ -1,50 +1,61 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Task Manager Web App Constitution
+
+<!-- Spec-Driven Development - Ratified 2026-03-06 -->
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Specification First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+All features must be defined through clear specifications before any implementation begins. This ensures alignment with requirements, reduces rework, and maintains project clarity. Specifications serve as the foundation for all development work.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Simplicity and Maintainability
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+The system architecture and code should remain simple, modular, and easy to maintain. Unnecessary complexity is avoided; components are designed to be understood and modified by team members. Clear separation of concerns enables maintainability and future enhancements.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Documentation and Transparency
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+All requirements, architecture decisions, and implementation steps must be documented clearly. Documentation is kept up-to-date and serves as the source of truth for the project. Transparency in decision-making ensures team alignment and facilitates knowledge transfer.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Technology Stack
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+**Frontend**: HTML5, CSS3, and Vanilla JavaScript provide a lightweight, accessible user interface without external framework dependencies.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+**Architecture**: Single-page browser application with modular JavaScript components that encapsulate functionality and state management.
+
+**Storage**: Browser localStorage is used for persisting tasks locally, enabling data retention across browser sessions without backend infrastructure.
+
+**Development Tools**: Git for version control and GitHub for repository management ensure collaborative development and change tracking.
+
+## Quality Assurance & Testing
+
+Basic functional testing is performed manually during development. Core functionality verified before changes are committed:
+
+- Creating tasks
+- Displaying tasks
+- Marking tasks as completed
+- Deleting tasks
+- Persistence using localStorage
+
+All features must work correctly in modern browsers (Chrome, Firefox, Safari, Edge) before code is committed to the repository.
+
+## Versioning Policy
+
+The project follows semantic versioning (MAJOR.MINOR.PATCH):
+
+- **MAJOR**: Breaking changes to application functionality or data schema
+- **MINOR**: New features that maintain backward compatibility
+- **PATCH**: Bug fixes and minor improvements
+
+All changes are tracked in Git commit history and documented in release notes.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices and serves as the authoritative standard for the Task Manager Web App project.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Principles Enforcement**: All project principles defined in this constitution must be followed during development. Specifications, plans, and implementations must remain consistent with these defined standards.
+
+**Amendments**: Changes to this constitution must be documented and committed through Git version control. All modifications must be reviewed to ensure they align with the project's core principles of specification-first development, simplicity, and clear documentation.
+
+**Compliance Review**: The project maintainer is responsible for enforcing these rules and ensuring ongoing compliance with this constitution.
+
+**Version**: 1.0.0 | **Ratified**: 2026-03-06 | **Last Amended**: 2026-03-06
