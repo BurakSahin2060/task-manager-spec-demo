@@ -12,7 +12,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Total Tasks**: 28  
 **Estimated Effort**: 4-6 hours  
-**MVP Scope**: User Stories 1, 2, 5 (P1 features)  
+**MVP Scope**: User Stories 1, 2, 5 (P1 features)
 
 ## Phase 1: Setup Tasks
 
@@ -34,7 +34,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Goal**: Enable users to create tasks with input validation  
 **Test Criteria**: Can create task, input clears, task appears in list  
-**Dependencies**: StorageService, TaskInput component  
+**Dependencies**: StorageService, TaskInput component
 
 - [x] T011 Implement TaskInput component with form handling
 - [x] T012 Add input validation (non-empty, trim whitespace)
@@ -47,7 +47,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Goal**: Display all tasks in organized list format  
 **Test Criteria**: Tasks display in list, show completion status, handle empty state  
-**Dependencies**: TaskList component, StorageService  
+**Dependencies**: TaskList component, StorageService
 
 - [x] T017 Implement TaskList component for rendering tasks
 - [x] T018 Create TaskItem component for individual task display
@@ -60,7 +60,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Goal**: Ensure tasks survive browser restarts  
 **Test Criteria**: Tasks persist across browser sessions, restore on load  
-**Dependencies**: StorageService, application initialization  
+**Dependencies**: StorageService, application initialization
 
 - [x] T023 Implement application load from localStorage
 - [x] T024 Add automatic saving on all data changes
@@ -72,7 +72,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Goal**: Allow toggling task completion with visual feedback  
 **Test Criteria**: Checkbox toggles, visual changes persist, status saves  
-**Dependencies**: TaskItem component, StorageService  
+**Dependencies**: TaskItem component, StorageService
 
 - [x] T028 Implement checkbox toggle functionality in TaskItem
 - [x] T029 Add visual styling for completed tasks (strikethrough, opacity)
@@ -83,7 +83,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 
 **Goal**: Enable task removal with immediate UI updates  
 **Test Criteria**: Delete button removes task, changes persist  
-**Dependencies**: TaskItem component, StorageService  
+**Dependencies**: TaskItem component, StorageService
 
 - [x] T032 Implement delete button in TaskItem component
 - [x] T033 Add delete confirmation handling (immediate deletion)
@@ -93,7 +93,7 @@ Implementation tasks for a simple Task Manager Web Application. The application 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
 **Goal**: Final polish, testing, and edge case handling  
-**Test Criteria**: All features work together, edge cases handled  
+**Test Criteria**: All features work together, edge cases handled
 
 - [ ] T036 Implement edge case handling (empty titles, long titles)
 - [ ] T037 Add keyboard navigation support
@@ -119,7 +119,9 @@ Setup (T001-T006)
 ## Parallel Execution Examples
 
 ### Sprint 1: Core Infrastructure (Tasks T001-T010)
+
 **Parallel Teams**:
+
 - Team A: HTML/CSS setup (T001-T006)
 - Team B: StorageService & validation (T007-T010)
 
@@ -127,7 +129,9 @@ Setup (T001-T006)
 **Output**: Basic app structure with data layer
 
 ### Sprint 2: MVP Features (Tasks T011-T027)
+
 **Parallel Teams**:
+
 - Team A: Task creation (T011-T016)
 - Team B: Task display (T017-T022)
 - Team C: Persistence (T023-T027)
@@ -136,7 +140,9 @@ Setup (T001-T006)
 **Output**: Fully functional MVP (create, view, persist)
 
 ### Sprint 3: Advanced Features (Tasks T028-T042)
+
 **Parallel Teams**:
+
 - Team A: Completion & deletion (T028-T035)
 - Team B: Polish & testing (T036-T042)
 
@@ -146,26 +152,31 @@ Setup (T001-T006)
 ## Independent Test Criteria
 
 ### User Story 1 (Create Task)
+
 - Open app → Enter "Test task" → Click Add → Task appears in list
 - Input field clears after adding
 - Can add multiple tasks sequentially
 
 ### User Story 2 (View Tasks)
+
 - Create 3 tasks → All display in list
 - Empty app shows appropriate empty state
 - Tasks show correct titles and completion status
 
 ### User Story 5 (Persistence)
+
 - Create tasks → Close browser → Reopen → Tasks still there
 - Modify completion status → Close/reopen → Status preserved
 - Clear browser data → Tasks gone (expected)
 
 ### User Story 3 (Complete Tasks)
+
 - Create task → Click checkbox → Visual change (strikethrough)
 - Click again → Returns to incomplete state
 - Close/reopen → Completion status preserved
 
 ### User Story 4 (Delete Tasks)
+
 - Create multiple tasks → Delete one → Only that task removed
 - Close/reopen → Deleted task stays deleted
 - Delete all tasks → Empty state shown
@@ -176,7 +187,7 @@ Setup (T001-T006)
 **Incremental Delivery**: Each user story delivers independent value  
 **Test-Driven**: Manual testing validates each feature before proceeding  
 **Simple Architecture**: Modular components with clear interfaces  
-**Performance Focus**: Optimize for 100+ tasks from the start  
+**Performance Focus**: Optimize for 100+ tasks from the start
 
 ## Success Metrics
 

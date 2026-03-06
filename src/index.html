@@ -1,39 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="app-container">
-        <header>
-            <h1>Task Manager</h1>
-        </header>
+      <header>
+        <h1>Task Manager</h1>
+      </header>
 
-        <main>
-            <form class="task-input-form" id="task-input-form">
-                <div class="input-group">
-                    <input
-                        type="text"
-                        id="task-input"
-                        placeholder="Enter a new task..."
-                        maxlength="200"
-                        required
-                    />
-                    <button type="submit" id="add-task-btn">
-                        Add Task
-                    </button>
-                </div>
-            </form>
+      <main>
+        <form class="task-input-form" id="task-input-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="task-input"
+              placeholder="Enter a new task..."
+              maxlength="200"
+              required
+            />
+            <button type="submit" id="add-task-btn">Add Task</button>
+          </div>
+        </form>
 
-            <div class="task-list" id="task-list">
-                <!-- Tasks will be rendered here -->
-            </div>
-        </main>
+        <div class="task-list" id="task-list">
+          <!-- Tasks will be rendered here -->
+        </div>
+      </main>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

@@ -5,7 +5,7 @@
 **Status**: Draft  
 **Input**: User description: "Create a simple Task Manager Web Application that allows users to manage daily tasks directly in the browser. Users should be able to create a new task by entering a task title, view a list of all tasks, mark tasks as completed, and delete tasks from the list. The application should run entirely in the browser using HTML, CSS, and JavaScript. Tasks should be stored using browser localStorage so that they persist between sessions. The user interface should be minimal, clean, and easy to use. The application should load quickly and require no external services or backend infrastructure."
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Create a New Task (Priority: P1)
 
@@ -101,7 +101,7 @@ The application should store all tasks locally in the browser so that when a use
 - What happens if user has the application open in multiple browser tabs simultaneously?
 - How does the application handle browser's private/incognito mode where storage may not persist?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -119,7 +119,7 @@ The application should store all tasks locally in the browser so that when a use
 ### Key Entities
 
 - **Task**: Represents a single item in the task list
-  - Attributes: 
+  - Attributes:
     - `id`: Unique identifier (string/number)
     - `title`: Task description/name (string)
     - `completed`: Boolean flag indicating completion status (true/false)
@@ -129,7 +129,7 @@ The application should store all tasks locally in the browser so that when a use
   - One-to-many relationship with Task entities
   - Stored as JSON array in localStorage under a specific key (e.g., "tasks")
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

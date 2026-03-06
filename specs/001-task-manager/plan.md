@@ -23,7 +23,7 @@ Create a simple Task Manager Web Application that allows users to manage daily t
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
 ### Core Principles Compliance
 
